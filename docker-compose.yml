@@ -4,12 +4,16 @@ services:
 
   wordpress:
     image: wordpress
+    volumes:
+      - "./wordpress:/var/www/html"
     ports:
       - 8080:80
     environment:
-      WORDPRESS_DB_PASSWORD: example
+      WORDPRESS_DB_PASSWORD: wordpress
 
   mysql:
     image: mariadb
+    volumes:
+      - "./database:/var/lib/mysql"
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: wordpress
