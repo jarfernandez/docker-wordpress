@@ -1,7 +1,7 @@
 # docker-wordpress
 WordPress sobre Docker.
 
-Para arrancar ejecutar el siguiente comando:
+Para arrancar WordPress, ejecutar el siguiente comando:
 ```
 $ docker-compose up -d
 ```
